@@ -5,3 +5,9 @@ Description: style to child theme
 Version: 1.0.0
 
 */
+
+@media (min-width: 601px) {
+  .kvindecontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
