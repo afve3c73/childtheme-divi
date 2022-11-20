@@ -1,0 +1,102 @@
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+  .hvid p {
+    color: white;
+    height: 130px;
+  }
+}
+.rubrik {
+  font-family: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-block: 10px;
+}
+
+.fodboldcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: white;
+  padding-inline: 32px;
+  gap: 30px;
+  padding-block: 22px;
+}
+#hold {
+  box-shadow: 9px 16px 21px -4px rgb(0 0 0 / 30%);
+  background-color: white;
+  color: black;
+  padding-bottom: 10px;
+  padding-inline: 20px;
+}
+#hold h2 {
+  color: #fc5600;
+  text-align: center;
+}
+
+/* #hold :hover {
+  background-color: yellow;
+} */
+
+#filtrering {
+  background-color: white;
+  justify-content: space-evenly;
+  padding-block: 30px;
+  display: flex;
+}
+
+#filtrering {
+  background-color: white;
+  padding-block: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+#filtrering button {
+  padding-block: 7px;
+  padding-inline: 40px;
+  border: none;
+  background: #fc5600;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button .alle {
+  background-color: red;
+}
+
+#filtrering :hover {
+  text-decoration: underline;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000088;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#popup article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  background-color: white;
+  color: black;
+}
+
+#popup article p {
+  letter-spacing: none;
+}
+
+/* #popup .artikel:nth-child(2n + 1) {
+  background-color: #d1bc92;
+} */
