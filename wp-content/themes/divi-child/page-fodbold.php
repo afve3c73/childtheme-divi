@@ -28,11 +28,13 @@ get_header();
 	<section id="primary" class= "content-area">
 <main id="main" class="site-main"> 
 	<section class="hvid">
-		<p>hello</p>
+		<p> hello</p>
 	</section>
-<div class="rubrik"><h1> Spil Fodbold</h1></div>	
+<div><h1 class="rubrik">Fodbold</h1></div>	
 <nav id="filtrering"><button class ="alle" data-fodbold="alle">Alle</button></nav>
-	
+<div class="knap">
+<a href="https://madelene.dk/kea/09_cms/norrebro-united/indmelding/"><button class="knap"> Till indmeldning</button></a>
+</div>
 <section class= "fodboldcontainer">
 </section>
   

@@ -2,20 +2,85 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.hvid p {
+  color: white;
+  background-color: white;
+}
 @media screen and (max-width: 980px) {
   .hvid p {
-    color: white;
-    height: 130px;
+    height: 100px;
   }
 }
-.rubrik {
+.rubrik h1 {
   font-family: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
   padding-block: 10px;
+  font-size: 100px;
+ 
+  font-weight: 400;
 }
 
+.rubrik {
+  margin-right: 32px;
+}
+#filtrering {
+ 
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 20px;
+  
+}
+
+
+
+  #filtrering button {
+  padding-block: 10px;
+  padding-inline: 40px;
+  border: 0;
+  background-color: #fc5600;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+} 
+
+.valgt {
+  background-color: white;
+}
+
+#filtrering :hover {
+  text-decoration: underline;
+}
+
+.knap {
+  display: flex;
+justify-content: flex-start;
+}
+
+.knap button {
+  padding-block: 7px;
+  padding-inline: 40px;
+  border: none;
+  background-color: #fc5600;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 52px;
+  font-family: bold;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.knap :hover {
+  text-decoration: underline;
+}
 .fodboldcontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -34,67 +99,55 @@
 #hold h2 {
   color: #fc5600;
   text-align: center;
+  font-size: 26px;
+padding-top: 10px;
+padding-right: 32px;
 }
 
-/* #hold :hover {
-  background-color: yellow;
+/* #hold :hover { 
+  box-shadow: 9px 16px 80px -4px rgb(0 0 0 / 30%);  
 } */
 
-#filtrering {
-  background-color: white;
-  justify-content: space-evenly;
-  padding-block: 30px;
-  display: flex;
-}
 
-#filtrering {
-  background-color: white;
-  padding-block: 30px;
-  display: grid;
-  gap: 20px;
-}
 
-#filtrering button {
-  padding-block: 7px;
-  padding-inline: 40px;
-  border: none;
-  background: #fc5600;
-  color: black;
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-button .alle {
-  background-color: red;
-}
-
-#filtrering :hover {
-  text-decoration: underline;
-}
 
 #popup {
   position: fixed;
   top: 0;
   left: 0;
   background-color: #00000088;
-  width: 100vw;
+  max-width: 1700vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
   display: none;
+  z-index: 10;
 }
 
 #popup article {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 80%;
+  grid-template-columns: 1fr;
+  max-width: 55%;
   background-color: white;
   color: black;
+  padding:20px;
+  border-radius: 10px;
+  gap: 20px;
+  margin-block: 20px;
 }
 
 #popup article p {
   letter-spacing: none;
+}
+
+#popup article img {
+  width: 80%;
+  
+}
+
+#popup article h2 {
+  color: #fc5600;
+  text-align: center;
 }
 
 /* #popup .artikel:nth-child(2n + 1) {
